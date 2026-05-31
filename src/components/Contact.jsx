@@ -3,8 +3,10 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Send, Terminal, CheckCircle2 } from 'lucide-react';
+import { useLanguage } from '../lib/Providers';
 
 export default function Contact({ profile }) {
+  const { t } = useLanguage();
   const [form, setForm] = useState({ name: '', email: '', message: '' });
   const [status, setStatus] = useState('idle'); // idle, sending, success
 
@@ -42,8 +44,8 @@ export default function Contact({ profile }) {
   return (
     <section id="contact">
       <div className="section-header">
-        <span className="section-subtitle">// INBOUND_COMMUNICATIONS</span>
-        <h2 className="section-title text-glow-cyan">Contact Terminal</h2>
+        <span className="section-subtitle">{t.contact.subtitle}</span>
+        <h2 className="section-title text-glow-cyan">{t.contact.title}</h2>
       </div>
 
       <div style={{
@@ -129,7 +131,7 @@ export default function Contact({ profile }) {
               {/* Name */}
               <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                 <label className="mono-font" style={{ fontSize: '0.85rem', color: 'var(--accent-cyan)' }}>
-                  SENDER_NAME
+                  {t.contact.name}
                 </label>
                 <input
                   type="text"
@@ -156,7 +158,7 @@ export default function Contact({ profile }) {
               {/* Email */}
               <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                 <label className="mono-font" style={{ fontSize: '0.85rem', color: 'var(--accent-cyan)' }}>
-                  SENDER_EMAIL
+                  {t.contact.email}
                 </label>
                 <input
                   type="email"
@@ -184,7 +186,7 @@ export default function Contact({ profile }) {
             {/* Message */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
               <label className="mono-font" style={{ fontSize: '0.85rem', color: 'var(--accent-cyan)' }}>
-                PAYLOAD_DATA // MESSAGE
+                {t.contact.message}
               </label>
               <textarea
                 name="message"
@@ -227,13 +229,13 @@ export default function Contact({ profile }) {
               {status === 'idle' && (
                 <>
                   <Send size={18} />
-                  <span>DISPATCH_MESSAGE</span>
+                  <span>{t.contact.send}</span>
                 </>
               )}
               {status === 'sending' && (
                 <>
                   <Terminal size={18} className="spin-icon" />
-                  <span>TRANSMITTING_PACKETS...</span>
+                  <span>{t.contact.sending}</span>
                 </>
               )}
               {status === 'success' && (

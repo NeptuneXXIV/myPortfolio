@@ -2,8 +2,10 @@
 
 import { motion } from 'framer-motion';
 import { Layout, Server, Figma, Cpu, Code } from 'lucide-react';
+import { useLanguage } from '../lib/Providers';
 
-export default function Skills({ skills, title, subtitle }) {
+export default function Skills({ skills }) {
+  const { t } = useLanguage();
   // Get unique categories from skills
   const uniqueCategories = [...new Set(skills.map(s => s.category || 'Other'))];
 
@@ -65,8 +67,8 @@ export default function Skills({ skills, title, subtitle }) {
   return (
     <section id="skills">
       <div className="section-header">
-        <span className="section-subtitle">{subtitle || "// ACCESS_CORE_COMPETENCY"}</span>
-        <h2 className="section-title text-glow-cyan">{title || "Skills Grid"}</h2>
+        <span className="section-subtitle">{t.skills.subtitle}</span>
+        <h2 className="section-title text-glow-cyan">{t.skills.title}</h2>
       </div>
 
       <motion.div 

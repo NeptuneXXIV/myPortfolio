@@ -4,8 +4,10 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ExternalLink, Github, Layers } from 'lucide-react';
 import Image from 'next/image';
+import { useLanguage } from '../lib/Providers';
 
 export default function Projects({ projects }) {
+  const { t } = useLanguage();
   const [activeFilter, setActiveFilter] = useState('ALL');
 
   // Extract all unique tags
@@ -20,8 +22,8 @@ export default function Projects({ projects }) {
     <section id="projects">
       <div className="section-header" style={{ display: 'flex', flexDirection: 'column', md: 'row', justifyContent: 'between', alignItems: 'start', md: 'center', marginBottom: '50px' }}>
         <div>
-          <span className="section-subtitle">// DEPLOYED_APPLICATIONS</span>
-          <h2 className="section-title text-glow-cyan">Project Files</h2>
+          <span className="section-subtitle">{t.projects.subtitle}</span>
+          <h2 className="section-title text-glow-cyan">{t.projects.title}</h2>
         </div>
 
         {/* Filter Tabs */}
@@ -238,7 +240,7 @@ export default function Projects({ projects }) {
                       onMouseLeave={e => e.target.style.color = 'var(--accent-cyan)'}
                     >
                       <ExternalLink size={14} />
-                      <span>LIVE_DEMO</span>
+                      <span>{t.projects.live}</span>
                     </a>
                   )}
 
@@ -259,7 +261,7 @@ export default function Projects({ projects }) {
                       onMouseLeave={e => e.target.style.color = 'var(--text-secondary)'}
                     >
                       <Github size={14} />
-                      <span>SOURCE_CODE</span>
+                      <span>{t.projects.github}</span>
                     </a>
                   )}
                 </div>

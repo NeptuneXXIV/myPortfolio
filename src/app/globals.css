@@ -31,6 +31,30 @@
   scroll-behavior: smooth;
 }
 
+:root[data-theme='light'] {
+  /* Light Mode Color Palette */
+  --bg-primary: #f0f4f8;
+  --bg-secondary: #ffffff;
+  --bg-card: rgba(255, 255, 255, 0.8);
+  --border-color: #cbd5e1;
+  --accent-cyan: #0088cc;
+  --accent-purple: #9d00d8;
+  --accent-green: #2ecc71;
+  --accent-pink: #e83e8c;
+  
+  /* Text Colors */
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+  --text-cyan: #0284c7;
+
+  /* Subtle Glows for Light Mode */
+  --glow-cyan: 0 0 10px rgba(0, 136, 204, 0.3), 0 0 20px rgba(0, 136, 204, 0.1);
+  --glow-purple: 0 0 10px rgba(157, 0, 216, 0.3), 0 0 20px rgba(157, 0, 216, 0.1);
+  --glow-cyan-border: 0 0 8px rgba(0, 136, 204, 0.2), inset 0 0 8px rgba(0, 136, 204, 0.05);
+  --glow-purple-border: 0 0 8px rgba(157, 0, 216, 0.2), inset 0 0 8px rgba(157, 0, 216, 0.05);
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

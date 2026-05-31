@@ -2,8 +2,10 @@
 
 import { Github, Instagram, Linkedin, Cpu } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { useLanguage } from '../lib/Providers';
 
 export default function Footer({ socials }) {
+  const { t } = useLanguage();
   const socialLinks = [
     { icon: <Github size={20} />, url: socials?.github || 'https://github.com', label: 'GitHub' },
     { icon: <Instagram size={20} />, url: socials?.instagram || 'https://instagram.com', label: 'Instagram' },
@@ -82,7 +84,7 @@ export default function Footer({ socials }) {
           letterSpacing: '1.5px',
           textTransform: 'uppercase'
         }}>
-          &copy; {new Date().getFullYear()} NEO // CORE. ALL PROTOCOLS RESERVED.
+          &copy; {new Date().getFullYear()} NEO // CORE. {t.footer.rights.toUpperCase()}
         </p>
       </div>
     </footer>

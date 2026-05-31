@@ -3,8 +3,11 @@
 import { motion } from 'framer-motion';
 import { Terminal, ShieldAlert, ChevronDown } from 'lucide-react';
 import Image from 'next/image';
+import { useLanguage } from '../lib/Providers';
 
 export default function Hero({ profile }) {
+  const { t } = useLanguage();
+
   const handleConnectClick = (e) => {
     e.preventDefault();
     const contactSection = document.getElementById('contact');
@@ -61,7 +64,7 @@ export default function Hero({ profile }) {
               boxShadow: 'var(--glow-cyan)',
               animation: 'pulse 2s infinite'
             }} />
-            SYSTEMS: ONLINE
+            {t.hero.systems}
           </div>
 
           <h2 style={{
@@ -81,9 +84,10 @@ export default function Hero({ profile }) {
             fontWeight: '900',
             lineHeight: '1.1',
             letterSpacing: '-1px',
-            marginBottom: '12px'
+            marginBottom: '12px',
+            color: 'var(--text-primary)'
           }}>
-            {profile.greeting || "Hi, I'm"} <span style={{ 
+            {profile.greeting || t.hero.greeting} <span style={{ 
               color: 'var(--accent-cyan)',
               textShadow: '0 0 15px rgba(0,170,255,0.4)' 
             }}>{profile.name || 'NEO'}</span>
@@ -91,7 +95,7 @@ export default function Hero({ profile }) {
 
           <h3 className="mono-font text-glow-cyan" style={{
             fontSize: 'clamp(1.2rem, 3vw, 2.2rem)',
-            color: '#fff',
+            color: 'var(--text-primary)',
             marginBottom: '20px',
             borderRight: '2px solid var(--accent-cyan)',
             width: 'fit-content',
@@ -119,7 +123,7 @@ export default function Hero({ profile }) {
               style={{ display: 'inline-flex', alignItems: 'center', gap: '10px' }}
             >
               <Terminal size={18} />
-              <span>Let's Connect</span>
+              <span>{t.hero.connect}</span>
             </a>
             
             <a 
@@ -144,7 +148,7 @@ export default function Hero({ profile }) {
                 e.currentTarget.style.textShadow = 'none';
               }}
             >
-              <span>View Projects</span>
+              <span>{t.hero.viewProjects}</span>
             </a>
           </div>
         </motion.div>
@@ -218,7 +222,7 @@ export default function Hero({ profile }) {
           if (next) window.scrollTo({ top: next.offsetTop - 80, behavior: 'smooth' });
         }}
       >
-        <span>SCROLL_DOWN</span>
+        <span>{t.hero.scroll}</span>
         <ChevronDown size={16} style={{ color: 'var(--accent-cyan)' }} />
       </motion.div>
 
