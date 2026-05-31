@@ -36,11 +36,6 @@ export function Providers({ children }) {
 
   const t = translations[lang];
 
-  // Prevent hydration mismatch by rendering default initially
-  if (!mounted) {
-    return <>{children}</>;
-  }
-
   return (
     <NextThemesProvider attribute="data-theme" defaultTheme="system" enableSystem>
       <LanguageContext.Provider value={{ lang, toggleLanguage, t }}>
