@@ -1,0 +1,123 @@
+{
+  "profile": {
+    "greeting": "Hi, I'm",
+    "name": "NEO HYPERION",
+    "title": "Full-Stack Developer",
+    "subtitle": "Architecting high-performance, decentralized web systems with glowing, futuristic user interfaces. Specializing in Node.js, Next.js, and interactive visual aesthetics.",
+    "email": "neo@cyberstack.io",
+    "location": "GRID_SECTOR_7",
+    "avatar": "/images/profile_glow.jpg",
+    "socials": {
+      "github": "https://github.com",
+      "instagram": "https://instagram.com",
+      "linkedin": "https://linkedin.com"
+    }
+  },
+  "skills": [
+    {
+      "id": "fe-1",
+      "title": "React & Next.js",
+      "category": "Frontend",
+      "level": 95,
+      "glowColor": "#00aaff"
+    },
+    {
+      "id": "fe-2",
+      "title": "TypeScript",
+      "category": "Frontend",
+      "level": 90,
+      "glowColor": "#00d4ff"
+    },
+    {
+      "id": "fe-3",
+      "title": "CSS3 & Animations",
+      "category": "Frontend",
+      "level": 85,
+      "glowColor": "#bd00ff"
+    },
+    {
+      "id": "be-1",
+      "title": "Node.js & Express",
+      "category": "Backend",
+      "level": 92,
+      "glowColor": "#39ff14"
+    },
+    {
+      "id": "be-2",
+      "title": "PostgreSQL & Prisma",
+      "category": "Backend",
+      "level": 88,
+      "glowColor": "#00ffcc"
+    },
+    {
+      "id": "be-3",
+      "title": "GraphQL / REST APIs",
+      "category": "Backend",
+      "level": 90,
+      "glowColor": "#ff007f"
+    },
+    {
+      "id": "ux-1",
+      "title": "Figma Wireframing",
+      "category": "UI/UX",
+      "level": 85,
+      "glowColor": "#ff9f00"
+    },
+    {
+      "id": "ux-2",
+      "title": "Prototyping & Motion",
+      "category": "UI/UX",
+      "level": 90,
+      "glowColor": "#ff00aa"
+    },
+    {
+      "id": "ux-3",
+      "title": "Design Systems",
+      "category": "UI/UX",
+      "level": 80,
+      "glowColor": "#0055ff"
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-1",
+      "title": "AetherNet - Decentralized Social Node",
+      "description": "A web3-enabled social feed featuring cryptographic identity, real-time message encryption, and an interactive 3D node network visualization.",
+      "tags": ["Next.js", "WebSockets", "Three.js", "Web3"],
+      "image": "/images/project_aether.jpg",
+      "liveUrl": "https://aethernet.example.com",
+      "githubUrl": "https://github.com",
+      "featured": true
+    },
+    {
+      "id": "proj-2",
+      "title": "GridRunner - Cyberpunk Mini Game",
+      "description": "An endless retro-futuristic arcade game built on canvas with synthwave background music, speed scaling, and local highscore caching.",
+      "tags": ["HTML5 Canvas", "Vanilla JS", "Web Audio API"],
+      "image": "/images/project_gridrunner.jpg",
+      "liveUrl": "https://gridrunner.example.com",
+      "githubUrl": "https://github.com",
+      "featured": true
+    },
+    {
+      "id": "proj-3",
+      "title": "OmniSync - Headless DB Dashboard",
+      "description": "A dark-mode analytics panel for headless CMS systems, tracking request times, API health indices, and database schema updates.",
+      "tags": ["React", "Chart.js", "Node.js", "Express"],
+      "image": "/images/project_omnisync.jpg",
+      "liveUrl": "https://omnisync.example.com",
+      "githubUrl": "https://github.com",
+      "featured": true
+    },
+    {
+      "id": "proj-4",
+      "title": "NeuralCore - AI Code Helper UI",
+      "description": "An interactive chatbot interface utilizing generative models, featuring side-by-side diff viewers, and responsive multi-language syntax highlighting.",
+      "tags": ["Next.js", "CSS Grid", "OpenAI API", "Framer Motion"],
+      "image": "/images/project_neuralcore.jpg",
+      "liveUrl": "https://neuralcore.example.com",
+      "githubUrl": "https://github.com",
+      "featured": true
+    }
+  ]
+}
