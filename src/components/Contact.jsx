@@ -200,7 +200,7 @@ export default function Contact({ profile }) {
                   border: '1px solid var(--border-color)',
                   color: 'var(--text-primary)',
                   padding: '12px 16px',
-                  fontFamily: 'var(--font-body)',
+                  fontFamily: 'var(--font-mono)',
                   fontSize: '1rem',
                   borderRadius: '4px',
                   outline: 'none',
