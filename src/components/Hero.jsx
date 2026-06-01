@@ -106,6 +106,7 @@ export default function Hero({ profile }) {
           </h3>
 
           <p style={{
+            fontFamily: 'var(--font-mono)',
             color: 'var(--text-secondary)',
             fontSize: '1.1rem',
             lineHeight: '1.6',

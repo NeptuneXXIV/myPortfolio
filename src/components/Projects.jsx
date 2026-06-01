@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -203,6 +203,7 @@ export default function Projects({ projects }) {
                 </h3>
 
                 <p style={{
+                  fontFamily: 'var(--font-mono)',
                   color: 'var(--text-secondary)',
                   fontSize: '0.95rem',
                   lineHeight: '1.5',
