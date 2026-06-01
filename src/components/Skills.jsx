@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { motion } from 'framer-motion';
 import { Layout, Server, Figma, Cpu, Code } from 'lucide-react';
@@ -138,7 +138,7 @@ export default function Skills({ skills }) {
                     fontFamily: 'var(--font-mono)',
                     fontSize: '0.9rem'
                   }}>
-                    <span style={{ color: '#fff' }}>{skill.title}</span>
+                    <span style={{ color: 'var(--text-primary)' }}>{skill.title}</span>
                     <span style={{ color: skill.glowColor || cat.glowColor }}>{skill.level}%</span>
                   </div>
 

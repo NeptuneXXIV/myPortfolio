@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -55,7 +55,7 @@ export default function Projects({ projects }) {
               onMouseEnter={e => {
                 if (activeFilter !== tag) {
                   e.target.style.borderColor = 'rgba(0, 170, 255, 0.3)';
-                  e.target.style.color = '#fff';
+                  e.target.style.color = 'var(--text-primary)';
                 }
               }}
               onMouseLeave={e => {
@@ -195,7 +195,7 @@ export default function Projects({ projects }) {
                   fontFamily: 'var(--font-header)',
                   fontSize: '1.4rem',
                   fontWeight: '700',
-                  color: '#fff',
+                  color: 'var(--text-primary)',
                   marginBottom: '10px',
                   letterSpacing: '0.5px'
                 }}>
@@ -236,7 +236,7 @@ export default function Projects({ projects }) {
                         textDecoration: 'none',
                         transition: 'color 0.2s'
                       }}
-                      onMouseEnter={e => e.target.style.color = '#fff'}
+                      onMouseEnter={e => e.target.style.color = 'var(--text-primary)'}
                       onMouseLeave={e => e.target.style.color = 'var(--accent-cyan)'}
                     >
                       <ExternalLink size={14} />
@@ -257,7 +257,7 @@ export default function Projects({ projects }) {
                         textDecoration: 'none',
                         transition: 'color 0.2s'
                       }}
-                      onMouseEnter={e => e.target.style.color = '#fff'}
+                      onMouseEnter={e => e.target.style.color = 'var(--text-primary)'}
                       onMouseLeave={e => e.target.style.color = 'var(--text-secondary)'}
                     >
                       <Github size={14} />

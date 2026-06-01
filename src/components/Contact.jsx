@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
@@ -81,7 +81,7 @@ export default function Contact({ profile }) {
             lineHeight: '1.8',
             color: 'var(--text-secondary)'
           }}>
-            <h4 style={{ color: '#fff', fontSize: '1rem', marginBottom: '15px', fontFamily: 'var(--font-header)' }}>
+            <h4 style={{ color: 'var(--text-primary)', fontSize: '1rem', marginBottom: '15px', fontFamily: 'var(--font-header)' }}>
               NODE_INFO
             </h4>
             <p>NAME: <span style={{ color: 'var(--accent-cyan)' }}>{profile.name || 'NEO'}</span></p>
@@ -143,7 +143,7 @@ export default function Contact({ profile }) {
                   style={{
                     background: 'var(--bg-secondary)',
                     border: '1px solid var(--border-color)',
-                    color: '#fff',
+                    color: 'var(--text-primary)',
                     padding: '12px 16px',
                     fontFamily: 'var(--font-body)',
                     fontSize: '1rem',
@@ -170,7 +170,7 @@ export default function Contact({ profile }) {
                   style={{
                     background: 'var(--bg-secondary)',
                     border: '1px solid var(--border-color)',
-                    color: '#fff',
+                    color: 'var(--text-primary)',
                     padding: '12px 16px',
                     fontFamily: 'var(--font-body)',
                     fontSize: '1rem',
@@ -198,7 +198,7 @@ export default function Contact({ profile }) {
                 style={{
                   background: 'var(--bg-secondary)',
                   border: '1px solid var(--border-color)',
-                  color: '#fff',
+                  color: 'var(--text-primary)',
                   padding: '12px 16px',
                   fontFamily: 'var(--font-body)',
                   fontSize: '1rem',

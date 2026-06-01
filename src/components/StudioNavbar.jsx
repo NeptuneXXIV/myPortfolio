@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { ArrowLeft, Cpu } from 'lucide-react';
 
 export function StudioNavbar(props) {
@@ -31,7 +31,7 @@ export function StudioNavbar(props) {
             letterSpacing: '1px',
             transition: 'all 0.3s'
           }}
-          onMouseEnter={e => e.target.style.color = '#fff'}
+          onMouseEnter={e => e.target.style.color = 'var(--text-primary)'}
           onMouseLeave={e => e.target.style.color = '#00aaff'}
         >
           <ArrowLeft size={16} />
